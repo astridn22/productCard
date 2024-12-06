@@ -1,0 +1,27 @@
+[
+  {
+    "titulo": "Auriculares Inalámbricos HyperSound X1",
+    "descripcion": "Auriculares de alta fidelidad con cancelación de ruido activa y autonomía de 24 horas.",
+    "imagenes": [
+      "/images/hypersound-x1-portada.png",
+      "images/hypersound-x1-1.png",
+      "images/hypersound-x1-2.png",
+      "images/hypersound-x1-3.png"
+    ],
+    "slug": "hypersound-x1",
+    "colitokens": 150
+  },
+  {
+    "titulo": "Memoria RAM Corsair Vengeance 16GB",
+    "descripcion": "Memoria RAM DDR4 de 16GB con velocidades de hasta 3200MHz, ideal para gaming y edición.",
+    "imagenes": [
+      "images/corsair-vengeance-portada.png",
+      "images/corsair-vengeance-1.png",
+      "images/corsair-vengeance-2.png"
+    ],
+    "slug": "corsair-vengeance",
+    "colitokens": 200
+  }
+]
+
+  
