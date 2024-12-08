@@ -38,7 +38,7 @@ function ProductCardComponent({product}: ProductCardProps) {
         <Carousel className="h-full w-full self-center">
           <CarouselContent>
             {product.imagenes.map((img, index) => (
-              <CarouselItem key={`${product.slug}-img-${index}`} className="basis-1/3">
+              <CarouselItem key={`${product.slug}-img-${index + 1}`} className="basis-1/3">
                 <button
                   aria-label={`Seleccionar imagen ${index + 1}`}
                   className={`flex h-16 w-full items-center justify-center border-2 p-1
