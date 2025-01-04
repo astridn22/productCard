@@ -24,7 +24,7 @@ function ProductCardComponent({product}: ProductCardProps) {
       <CardHeader>
         <img
           alt={`${product.titulo} - portada`}
-          className="border-opacity-1 aspect-square max-h-56 rounded-md border-2 border-gray-300 "
+          className="border-opacity-1 aspect-square max-h-60 rounded-md border-2 border-gray-300 "
           src={currentImage}
         />
 
