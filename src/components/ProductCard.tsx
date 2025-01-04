@@ -20,22 +20,22 @@ function ProductCardComponent({product}: ProductCardProps) {
   const [currentImage, setCurrentImage] = useState(product.imagenes[0]);
 
   return (
-    <Card className="my-auto h-full w-80 rounded-2xl bg-neutral-100">
+    <Card className="my-auto h-full w-4/5 rounded-3xl bg-neutral-100">
       <CardHeader>
         <img
           alt={`${product.titulo} - portada`}
-          className="border-opacity-1 aspect-square max-h-52 rounded-lg border-2 border-gray-300 "
+          className="border-opacity-1 aspect-square max-h-56 rounded-md border-2 border-gray-300 "
           src={currentImage}
         />
 
         <Carousel className="h-full w-full self-center">
-          <CarouselContent>
+          <CarouselContent className="mt-1">
             {product.imagenes.map((img, index) => (
               <CarouselItem key={`${product.slug}-img-${index + 1}`} className="basis-1/3">
                 <button
                   aria-label={`Seleccionar imagen ${index + 1}`}
-                  className={`flex h-16 w-full items-center justify-center border-2 p-1
-                     hover:border-black ${currentImage === img ? "border-black" : "border-gray-300"} rounded-md`}
+                  className={`flex h-16 w-full items-center justify-center border-2
+                     hover:border-black ${currentImage === img ? "border-black" : "border-none"} rounded-md`}
                   type="button"
                   onClick={() => setCurrentImage(img)}
                 >
@@ -53,9 +53,9 @@ function ProductCardComponent({product}: ProductCardProps) {
         </Carousel>
       </CardHeader>
       <CardContent />
-      <CardTitle className="mx-4 -mt-6">{product.titulo}</CardTitle>
-      <CardDescription className="mx-4 my-2 text-xl font-semibold text-zinc-800">
-        ${product.colitokens}
+      <CardTitle className="mx-4 -mt-6 text-lg font-normal">{product.titulo}</CardTitle>
+      <CardDescription className="mx-4 my-4 text-3xl font-semibold text-neutral-800">
+        © {product.colitokens}
       </CardDescription>
     </Card>
   );
