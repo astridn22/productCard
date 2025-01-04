@@ -35,7 +35,7 @@ function ProductCardComponent({product}: ProductCardProps) {
                 <button
                   aria-label={`Seleccionar imagen ${index + 1}`}
                   className={`flex h-16 w-full items-center justify-center border-2
-                     hover:border-black ${currentImage === img ? "border-black" : "border-none"} rounded-md`}
+                     hover:border-black ${currentImage === img ? "border-neutral-800" : "border-none"} rounded-md`}
                   type="button"
                   onClick={() => setCurrentImage(img)}
                 >
